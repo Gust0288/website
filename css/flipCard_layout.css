@@ -9,3 +9,34 @@
 .flip-card-back h3{
    color: aliceblue;
 }
+
+@media (max-width: 450px) {
+
+    .flip-card-back h1{
+        font-size: 5vw;
+    }
+    .flip-card-back p{
+        font-size: 3vw;
+    }
+    .flip-card-back h3{
+       font-size: 4vw;
+    }
+    
+
+
+  }
+@media (max-width: 400px) {
+
+    .flip-card-back h1{
+        font-size: 6vw;
+    }
+    .flip-card-back p{
+        font-size: 4vw;
+    }
+    .flip-card-back h3{
+       font-size: 5vw;
+    }
+    
+
+
+  }

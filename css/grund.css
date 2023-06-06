@@ -46,7 +46,6 @@ p{
 
 
 .hamburger {
-    
     display: block;
     width: 35px;
     cursor: pointer;
@@ -164,6 +163,11 @@ a:hover{
     .marg-top{
         margin-top: 10vw;
     }
+    .hamburger{
+        transform: scale(0.7);
+        animation: none;
+    }
+
 
    
     
