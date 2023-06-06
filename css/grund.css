@@ -18,11 +18,23 @@ p{
     font-family: Arima Madurai;
 }
 
-.banner img{
-    max-width: 6vw;
-    height: auto;
-    padding-left: 3vw;
-    
+.banner h1{
+    font-size: 3vw;
+    padding-left: 2.5vw;
+    z-index: 1;
+    margin: 0.5vw;
+}
+.banner h1:hover{
+    animation: bigger 5s 1;
+}
+
+@keyframes bigger{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
 }
 
 
@@ -66,9 +78,9 @@ p{
 }
 @keyframes horizontal-shaking {
     0% { transform: translateX(0) }
-    25% { transform: translateX(5px) }
-    50% { transform: translateX(-5px) }
-    75% { transform: translateX(5px) }
+    25% { transform: translateX(1px) }
+    50% { transform: translateX(-1px) }
+    75% { transform: translateX(1px) }
     100% { transform: translateX(0) }
    }
 
@@ -132,6 +144,7 @@ a{
 }
 a:hover{
     color: #7a7a7a;
+    animation: horizontal-shaking 0.5s infinite ;
 }
 
 
@@ -167,6 +180,16 @@ a:hover{
         transform: scale(0.7);
         animation: none;
     }
+    .banner h1:hover{
+        animation: none;
+    }
+    .banner h1{
+        font-size: 6vw;
+        padding-left: 2.5vw;
+        z-index: 1;
+        margin-top: 1.5vw;
+    }
+    
 
 
    

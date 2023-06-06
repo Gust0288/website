@@ -133,6 +133,7 @@ main{
   .close, .close2, .close3, .close4, .close5, .close6{
     color: white;
     margin-right: 1.3vw;
+    cursor: pointer;
   }
   .close:hover, .close2:hover, .close3:hover, .close4:hover, .close5:hover, .close6:hover{
     color: gray;
@@ -256,6 +257,10 @@ main{
             transform: scale(1);
         }
     }
+    .close:hover, .close:focus {
+        text-decoration: none;
+        cursor: pointer;
+      }
     
 
 
