@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "cormorantGaramondBold";
+    src: url(/fonts/cormorant-garamond/CormorantGaramond-Bold.ttf);
+  }
+@font-face {
+    font-family: "anton";
+    src: url(/fonts/Anton/Anton-Regular.ttf);
+  }
+
+
+body{
+    background-color: #121118;
+}
+h1{
+    font-family: Krungthep;
+}
+p{
+    font-family: Arima Madurai;
+}
+
+.banner img{
+    max-width: 6vw;
+    height: auto;
+    padding-left: 3vw;
+    
+}
+
+
+
+.banner {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+}
+
+.nav-box{
+    grid-column: 2;
+    background-color: #1C1B24;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25vw;
+    margin-top: 3.5vw;
+}
+
+
+
+
+.hamburger {
+    
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    margin-right: 3vw;
+    
+   
+}
+
+.shake{
+    animation-name: horizontal-shaking ;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+   
+}
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+   }
+
+.hamburger .bar, .hamburger::after, .hamburger::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: 0.4s;
+    
+    
+}
+
+
+
+.hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+.hamburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+
+.nav-bar {
+    display: contents; 
+    
+}
+.nav-bar ul {
+    display: none; 
+   
+  }
+
+.nav-bar.shown ul {
+    
+    padding-top: 1rem;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+    text-align: center;
+   
+    margin-right: 4vw;
+    font-size: 1.5vw;
+    font-family: Krungthep;
+    gap: 4em;
+    justify-content: center;
+    
+    
+  }
+  
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+a:hover{
+    color: #7a7a7a;
+}
+
+
+@media (max-width: 800px) {
+
+    .banner img{
+        max-width: 12vw;
+        height: auto;
+        padding-left: 2vw;
+        padding-top: 1.5vw;
+        
+        
+    }
+    .nav-box{
+        border-radius: 25vw;
+    }
+    .nav-bar.shown ul{
+        flex-flow: column;
+        font-size: 3vw;
+        gap: 1em;
+        
+    }
+    .nav-bar.shown ul a{
+        border-style: ridge;
+        border-radius: 3vw;
+        padding: 1vw;
+    }
+
+    .marg-top{
+        margin-top: 10vw;
+    }
+
+   
+    
+
+
+}
+
