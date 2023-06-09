@@ -1,42 +1,14 @@
-.flip-card-back h1{
-    font-size: 1.5vw;
-    color: aliceblue;
+
+
+#myBtn img, #myBtn2 img, #myBtn3 img, #myBtn4 img, #myBtn5 img, #myBtn6 img{
+    max-width: 100%;
+    background: #1C1B24;
+
+    box-shadow: 0px 0px 0px transparent;
+
+    border: 0px solid transparent;
+
+    text-shadow: 0px 0px 0px transparent
 }
-.flip-card-back p{
-    font-size: 1.2vw;
-    color: aliceblue;
-}
-.flip-card-back h3{
-   color: aliceblue;
-}
-
-@media (max-width: 450px) {
-
-    .flip-card-back h1{
-        font-size: 5vw;
-    }
-    .flip-card-back p{
-        font-size: 3vw;
-    }
-    .flip-card-back h3{
-       font-size: 4vw;
-    }
-    
 
 
-  }
-@media (max-width: 400px) {
-
-    .flip-card-back h1{
-        font-size: 6vw;
-    }
-    .flip-card-back p{
-        font-size: 4vw;
-    }
-    .flip-card-back h3{
-       font-size: 5vw;
-    }
-    
-
-
-  }

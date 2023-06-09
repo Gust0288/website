@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "krungthep";
+    src: url(../fonts/Krungthep.ttf);
+  }
+
+
 main{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
@@ -5,7 +11,13 @@ main{
       
 }
 
-
+main #titel{
+    color: aliceblue;
+    grid-column: 3;
+    text-align: center;
+    font-size: 5vw;
+    
+}
 
 .flip-card {
     grid-column: 2;
@@ -15,9 +27,23 @@ main{
     height: 350px;
     /* border: 1px solid #f1f1f1; */
     perspective: 1000px;
+    
 }
 
+#arrow{
+    display: none;
+    position: relative;
+    max-width: 20%;
+    grid-column: 3;
+    grid-row: 4;
+    right: 43vw;
+    top: 32vw;
+}
 
+.nr1{
+    grid-column: 3;
+    grid-row: 3;
+}
 
 .nr2{
     grid-column: 3;
@@ -25,19 +51,20 @@ main{
 }
 .nr3{
     grid-column: 4;
+    grid-row: 3;
 }
 .nr4{
-    grid-column: 2;
-    grid-row: 3;
+    grid-column: 4;
+    grid-row: 2;
     
 }
 .nr5{
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 3;
 }
 .nr6{
-    grid-column: 4;
-    grid-row: 3;
+    grid-column: 2;
+    grid-row: 2;
 }
 
 .flip-card-inner {
@@ -55,16 +82,16 @@ main{
   }
   .flip-card-front, .flip-card-back {
     position: absolute;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     /* -webkit-backface-visibility: hidden; Safari */
     backface-visibility: hidden;
     border-radius: 2.5vw;
     cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+
   }
   .flip-card-front {
-    background-color: #1C1B24;
-    color: black;
     cursor: pointer;
   }
   .flip-card-back {
@@ -202,9 +229,9 @@ main{
     cursor: pointer;
   }
 
- 
 
-  @media (max-width: 1200px) {
+
+  @media (max-width: 800px) {
 
     main{
         display: flex;
@@ -214,37 +241,38 @@ main{
     }
     .flip-card {
         grid-column: 2;
-        margin: 5vw;
+        margin: 0;
         background-color: transparent;
         width: 275px;
         height: 350px;
-        /* border: 1px solid #f1f1f1; */
-        perspective: none
+        
+        perspective: none;
     }
 
     .flip-card-front, .flip-card-back{
-        backface-visibility: visible;
+        backface-visibility: hidden;
     }
    
     .flip-card:hover .flip-card-inner {
-        transform: none
+        transform: none;
       }
       .flip-card-back {
         background-color: #1C1B24;
         color: white;
         transform: none
       }
-      .modal-content{
-        overflow: auto;
-      }
-      .modal h1{
-        margin-top: 1vw;
-      }
+    
       .flip-card-back{
         width: 100%;
       }
       .flip-card-back{
         animation: pulse 2s infinite;
+      }  
+      .modal-content{
+        overflow: auto;
+      }
+      .modal h1{
+        margin-top: 1vw;
       }
       @keyframes pulse{
         0%{
@@ -261,7 +289,19 @@ main{
         text-decoration: none;
         cursor: pointer;
       }
+
+    #arrow{
+        display: none;
+    }
     
 
 
   }
+
+  @media (max-width: 1000px) {
+    .flip-card{
+        margin: 5vw;
+    }
+  }
+
+ 

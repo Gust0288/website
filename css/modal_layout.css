@@ -2,24 +2,27 @@
 
 #modal1 {
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-columns: 0.5fr 2fr 2fr 1fr;
 }
 #modal1 p{
     grid-column: 3;
-    margin: 2vw;
-    padding-right: -5vw;
     color: aliceblue;
+    margin: 2vw;
+    font-size: 1.5vw;
+    grid-column: span 2;
 }
 #modal1 img{
 
     grid-column: 2;
     margin-top: 2vw;
     margin-bottom: 2vw;
-    margin-right: -5vw;
     max-width: 100%;
+    height: auto;
+    
 }
 #modal1 h1{
     margin: 0;
+    padding-left: 0.7vw;
     
 }
 #modal1,  #modal2, #modal3, #modal4, #modal5, #modal6{
@@ -41,10 +44,11 @@
     position: relative;
     font-family: "cormorantGaramondBold";
   }
-  
+ 
+ 
  
   
- .modal a::before {
+.modal a::before {
     content: "";
     position: absolute;
     /* display: block; */
@@ -56,11 +60,14 @@
     transform: scaleX(0);
     transition: transform 0.8s ease;
   }
- .modal a:hover::before {
+.modal a:hover::before {
     transform: scaleX(1);
   }
-
-
+.modal #bottom_link::before, .modal #bottom_link2::before, .modal #bottom_link3::before, .modal #bottom_link4::before, .modal #bottom_link5::before, .modal #bottom_link6::before{
+    transition: none;;
+    transform: none;
+    background-color: transparent;
+  }
 
 /* modal 1 */
 
@@ -71,22 +78,26 @@
 
 #modal2 {
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
 }
 #modal2 p{
     grid-column: 3;
     margin: 2vw;
-    padding-right: -5vw;
+    font-size: 1.5vw;
+    grid-column: span 2;
 }
 #modal2 img{
     grid-column: 2;
     margin-top: 2vw;
     margin-bottom: 2vw;
     margin-right: -5vw;
+    max-width: 100%;
+    height: auto;
     
 }
 #modal2 h1{
     margin: 0;
+    padding-left: 0.7vw;
 }
 /* modal 2 */
 
@@ -97,22 +108,27 @@
 /* modal 3 */
 #modal3 {
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
 }
 #modal3 p{
     grid-column: 3;
     margin: 2vw;
-    padding-right: -5vw;
+    font-size: 1.5vw;
+    grid-column: span 2;
 }
 #modal3 img{
     grid-column: 2;
     margin-top: 2vw;
     margin-bottom: 2vw;
     margin-right: -5vw;
+    max-width: 100%;
+    height: auto;
+    
     
 }
 #modal3 h1{
     margin: 0;
+    padding-left: 0.7vw;
 }
 /* modal 3 */
 
@@ -122,22 +138,31 @@
 /* modal 4 */
 #modal4 {
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
 }
 #modal4 p{
     grid-column: 3;
     margin: 2vw;
-    padding-right: -5vw;
+    font-size: 1.5vw;
+    grid-column: span 2;
+}
+#modal4 #flat_design{
+   grid-column: 1/5;
+   margin-left: 5vw;
 }
 #modal4 img{
     grid-column: 2;
     margin-top: 2vw;
     margin-bottom: 2vw;
     margin-right: -5vw;
+    max-width: 100%;
+    height: auto;
+    
     
 }
 #modal4 h1{
     margin: 0;
+    padding-left: 0.7vw;
 }
 /* modal 4 */
 
@@ -146,22 +171,26 @@
 /* modal 5 */
 #modal5 {
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
 }
 #modal5 p{
     grid-column: 3;
     margin: 2vw;
-    padding-right: -5vw;
+    font-size: 1.5vw;
+    grid-column: span 2;
 }
 #modal5 img{
     grid-column: 2;
     margin-top: 2vw;
     margin-bottom: 2vw;
     margin-right: -5vw;
+    max-width: 100%;
+    height: auto;
     
 }
 #modal5 h1{
     margin: 0;
+    padding-left: 0.7vw;
 }
 /* modal 5 */
 
@@ -170,24 +199,170 @@
 /* modal 6 */
 #modal6 {
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
 }
 #modal6 p{
     grid-column: 3;
     margin: 2vw;
-    padding-right: -5vw;
+    font-size: 1.5vw;
+    grid-column: span 2;
 }
 #modal6 img{
     grid-column: 2;
     margin-top: 2vw;
     margin-bottom: 2vw;
     margin-right: -5vw;
+    max-width: 100%;
+    height: auto;
+    
     
 }
 #modal6 h1{
     margin: 0;
+    padding-left: 0.7vw;
 }
 /* modal 6 */
+
+#bottom_link{
+    font-size: 2vw;
+    text-align: center;
+    border: solid;
+    width: 12%;
+    left: 32.8vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 0;
+}
+#bottom_link2{
+    font-size: 2vw;
+    text-align: center;
+    border: solid;
+    width: 12%;
+    left: 32.8vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 0;
+}
+#bottom_link3{
+    font-size: 2vw;
+    text-align: center;
+    border: solid;
+    width: 12%;
+    left: 32.8vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 0;
+}
+#bottom_link4{
+    font-size: 2vw;
+    text-align: center;
+    border: solid;
+    width: 12%;
+    left: 32.8vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 0;
+}
+#bottom_link5{
+    font-size: 2vw;
+    text-align: center;
+    border: solid;
+    width: 12%;
+    left: 32.8vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 0;
+}
+#bottom_link6{
+    font-size: 2vw;
+    text-align: center;
+    border: solid;
+    width: 12%;
+    left: 32.8vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 0;
+}
+.modal #intro{
+    grid-column: 2/4;
+    grid-row: 2;
+    margin-bottom: 5vw;
+    padding-top: 0vw;
+    padding-left: 0vw;
+    padding-top: 2vw;
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-right: -9vw;
+}
+.modal #intro2{
+    grid-column: 2/4;
+    grid-row: 2;
+    margin-bottom: 5vw;
+    padding-top: 0vw;
+    padding-left: 0vw;
+    padding-top: 2vw;
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+.modal #intro3{
+    grid-column: 2/4;
+    grid-row: 2;
+    margin-bottom: 5vw;
+    padding-top: 0vw;
+    padding-left: 0vw;
+    padding-top: 2vw;
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.modal #intro4{
+    grid-column: 2/4;
+    grid-row: 2;
+    margin-bottom: 5vw;
+    padding-top: 0vw;
+    padding-left: 0vw;
+    padding-top: 2vw;
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.modal #intro5{
+    grid-column: 2/4;
+    grid-row: 2;
+    margin-bottom: 5vw;
+    padding-top: 0vw;
+    padding-left: 0vw;
+    padding-top: 2vw;
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.modal #intro6{
+    grid-column: 2/4;
+    grid-row: 2;
+    margin-bottom: 5vw;
+    padding-top: 0vw;
+    padding-left: 0vw;
+    padding-top: 2vw;
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
 
 @media (max-width: 800px){
     #modal1, #modal2, #modal3, #modal4, #modal5, #modal6 {
@@ -197,9 +372,26 @@
     #modal1,  #modal2, #modal3, #modal4, #modal5, #modal6 img{
         max-width: 100%;
     }
+
     .modal a{
-        margin-top: 4vw;
         font-size: 3vw;
-      }
+    }
+
+    .modal #intro{
+        margin-right: -5vw;
+    }
+    
+      #bottom_link,#bottom_link2,#bottom_link3,#bottom_link4,#bottom_link5,#bottom_link6{
+        font-size: 4vw;
+        text-align: center;
+        animation: none;
+        width: 25%;
+        left: 27vw;
+        
+        
+    }  
+    #modal1 p,  #modal2 p, #modal3 p, #modal4 p, #modal5 p, #modal6 p {
+        font-size: 5vw;
+    }
   
 }

@@ -14,7 +14,7 @@ menu_btn.addEventListener("click", adActive);
 
 function toggleMenu(){
     document.querySelector(".nav-bar").classList.toggle("shown");
-    document.querySelector("img").classList.toggle(".marg-top")
+    // document.querySelector("img").classList.toggle(".marg-top")
     const menuShown = menu.classList.contains("shown");
 
 }
