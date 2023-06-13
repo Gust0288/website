@@ -92,16 +92,15 @@ img{
     main{
         display: flex;
         flex-direction: column;
+        margin: 0vw;
+        padding: 0vw;
     }
-    img{
-        max-width: 100vh;
-        height: auto;
-        box-shadow: none;
-    
-    }
-
     .portræt{
-        margin-right: 10vw;
+        margin-left: 0vw;
+        padding-left: 0vw;
+        box-shadow: none;
+        border-radius: 2.5vw;
+        width: 95.5%;
     }
     h1, h3, p{
         font-size: 5vw;
@@ -114,6 +113,9 @@ img{
         border-left: none;
         border-right: none;
         
+    }
+    .text2{
+        padding-right: 2vw;
     }
 }
 
