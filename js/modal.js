@@ -1,4 +1,3 @@
-
 var modal = document.getElementById("Modal_1");
 var modal2 = document.getElementById("Modal_2");
 var modal3 = document.getElementById("Modal_3");
